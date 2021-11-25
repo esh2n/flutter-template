@@ -1,0 +1,1 @@
+> assets/launcher_iconを変更した際に走らせてください.
