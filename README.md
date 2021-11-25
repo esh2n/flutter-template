@@ -1,16 +1,29 @@
 # xflutter_template
 
-A new Flutter project.
+> Flutter + Firebaseテンプレートプロジェクト.
 
-## Getting Started
+## 構成
+> 上から下への依存関係(ただしInfra・Test層はDomain層より上 : DIP)
 
-This project is a starting point for a Flutter application.
+- Common : Providerなど共通部分
+- Presentation : MVVMパターン、エンドポイント定義、一部Validation
+- UseCase : Entity・Value Objectの生成・使用・永続化依頼、EntityからPresentation層に渡す値の変換
+- Domain : Repository(Interface)、Entity・Value Object、Domain Service(ドメイン知識の表現)
+- Infra : Repository(実装)、Entityの永続化・検索
+- Test : テストコード(TODO)、Infraを交換することでテストが容易になる
 
-A few resources to get you started if this is your first Flutter project:
+## パッケージ
+> TODO
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 使い方
+> 前提 : Firebaseのプロジェクトを3つ(dev, stg, prod)作成の上、コンフィグファイル6つを用意しておく.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [] アイコン書き出し: assets内を変更の上、`flutter pub run flutter_launcher_icons:main`
+### ■ iOS
+- [] `ios/${flavor}`ディレクトリにそれぞれ`GoogleService-Info.plist`を入れる.(既存のものと交換)
+
+## 参考
+
+- https://zenn.dev/riscait/articles/separating-environments-in-flutter#ios%E5%AF%BE%E5%BF%9C
+- https://github.com/bannzai/Pilll (ディレクトリ構造を参考にしています)
+- https://qiita.com/ko2ic/items/2a0aa4301011f8f52275#image_picker-06020
