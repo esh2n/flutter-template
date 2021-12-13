@@ -1,0 +1,37 @@
+#!/bin/bash
+source ../../.env
+cd ../../
+BASE_PATH=$(pwd)
+
+if [ -z "$BUNDLE_ID" ]; then
+    echo "Usage: $0 <BUNDLE_IDを.envに入力してください>"
+    exit 1
+fi
+
+GRADLE_PATH="android/app/build.gradle"
+MANIFEST_PATH="android/app/src/main/AndroidManifest.xml"
+PROJ_PATH="ios/Runner.xcodeproj/project.pbxproj"
+
+sed -ie -r "s/'string', 'app_name', '(.*)'/'string', 'app_name', '$BUNDLE_ID'/" $GRADLE_PATH
+sed -ie -r "s/package=\"(.*)\">/package=\"$BUNDLE_ID\">/" $MANIFEST_PATH
+sed -ie -r "s/PRODUCT_BUNDLE_IDENTIFIER = \"(.*)\$/PRODUCT_BUNDLE_IDENTIFIER = \"$BUNDLE_ID\$(APP_ID_SUFFIX)\";/" $PROJ_PATH
+
+KOTLIN_PATH="android/app/src/main/kotlin"
+
+SPLITTED_BUNDLE_ID=(${BUNDLE_ID//./ })
+cd $KOTLIN_PATH
+ANDROID_DIR_LAYER1=$(ls -1)
+cd $ANDROID_DIR_LAYER1
+ANDROID_DIR_LAYER2=$(ls -1)
+cd $ANDROID_DIR_LAYER2
+ANDROID_DIR_LAYER3=$(ls -1)
+cd $BASE_PATH
+
+mv "$KOTLIN_PATH/$ANDROID_DIR_LAYER1/$ANDROID_DIR_LAYER2/$ANDROID_DIR_LAYER3" "$KOTLIN_PATH/$ANDROID_DIR_LAYER1/$ANDROID_DIR_LAYER2/${SPLITTED_BUNDLE_ID[2]}/"
+mv "$KOTLIN_PATH/$ANDROID_DIR_LAYER1/$ANDROID_DIR_LAYER2" "$KOTLIN_PATH/$ANDROID_DIR_LAYER1/${SPLITTED_BUNDLE_ID[1]}"
+mv "$KOTLIN_PATH/$ANDROID_DIR_LAYER1" "$KOTLIN_PATH/${SPLITTED_BUNDLE_ID[0]}"
+
+ACTIVITY_PATH="$KOTLIN_PATH/${SPLITTED_BUNDLE_ID[0]}/${SPLITTED_BUNDLE_ID[1]}/${SPLITTED_BUNDLE_ID[2]}/MainActivity.kt"
+sed -ie -r "s/package (.*)/package $BUNDLE_ID/" $ACTIVITY_PATH
+
+echo 'done';

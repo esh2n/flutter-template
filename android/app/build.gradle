@@ -79,14 +79,12 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true // For Firebase.
-        resValue "string", "app_name", "xflutter-template" +
-            (dartEnvironmentVariables.FLAVOR == 'prod' ? '' : ".${dartEnvironmentVariables.FLAVOR}")
+        resValue 'string', 'app_name', 'dev.esh2n.sample' +
+            (dartEnvironmentVariables.FLAVOR == 'prod' ? '' : '.${dartEnvironmentVariables.FLAVOR}')
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
@@ -97,7 +95,7 @@ flutter {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version'
     implementation 'com.android.support:multidex:1.0.3' // For Firebase.
 }
 
