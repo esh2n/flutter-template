@@ -101,5 +101,5 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3' // For Firebase.
 }
 
-apply plugin: 'com.google.gms.google-services' // For Firebabase.
-apply plugin: 'com.google.firebase.crashlytics' // For Crashlytics.
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
