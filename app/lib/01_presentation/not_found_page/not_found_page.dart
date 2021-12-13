@@ -1,3 +1,4 @@
+import 'package:component/component.dart';
 import 'package:flutter/material.dart';
 
 import 'package:gap/gap.dart';
@@ -31,6 +32,7 @@ class NotFoundPage extends StatelessWidget {
                 child: const Text('Return to Home'),
               ),
             ),
+            const BarWidget(text: 'Sample app'),
           ],
         ),
       ),

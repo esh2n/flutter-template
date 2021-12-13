@@ -7,6 +7,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  component:
+    path: '../component'
   cupertino_icons: ^1.0.2 # iOS系のアイコンパック
   package_info_plus: ^1.3.0 # BundleIDなどをアプリ側で検知
   cached_network_image: ^3.1.0 # Imageをキャッシュ化
