@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+dev/esh2n/sample/BuildConfig.java
+ dev.esh2n.sample.BuildConfig
