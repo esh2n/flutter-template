@@ -21,7 +21,6 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-
 // Dart-Defines.
 def dartEnvironmentVariables = [:];
 if (project.hasProperty('dart-defines')) {
@@ -79,14 +78,12 @@ android {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true // For Firebase.
-        resValue "string", "app_name", "xflutter-template" +
+        resValue 'string', 'app_name', 'dev.esh2n.sample' +
             (dartEnvironmentVariables.FLAVOR == 'prod' ? '' : ".${dartEnvironmentVariables.FLAVOR}")
     }
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
     }
@@ -101,5 +98,5 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3' // For Firebase.
 }
 
-apply plugin: 'com.google.gms.google-services' // For Firebabase.
-apply plugin: 'com.google.firebase.crashlytics' // For Crashlytics.
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'

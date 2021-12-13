@@ -11,9 +11,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>xflutter-template$(APP_ID_SUFFIX)</string>
+	<string>$(APP_DISPLAY_NAME)$(APP_ID_SUFFIX)</string>
 	<key>CFBundleDisplayName</key>
-	<string>xflutter-template$(APP_ID_SUFFIX)</string>
+	<string>$(APP_DISPLAY_NAME)$(APP_ID_SUFFIX)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
