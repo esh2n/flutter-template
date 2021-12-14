@@ -1,0 +1,6 @@
+# #!/bin/bash
+# cd ../../ && \
+# flutter pub get && \
+# echo 'done';
+
+# TODO: FADへのデプロイ手順を記述
