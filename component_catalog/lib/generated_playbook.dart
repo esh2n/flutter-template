@@ -1,6 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-import 'package:component_catalog/bar/bar.story.dart' as _i5;
 import 'package:component_catalog/foo/foo_widget.story.dart' as _i4;
 import 'package:component_catalog/image/asset_image.story.dart' as _i3;
 import 'package:playbook/playbook.dart' as _i1;
@@ -8,7 +7,7 @@ import 'package:playbook/src/scenario_layout.dart' as _i2;
 
 _i1.Playbook get playbook => _i1.Playbook(stories: stories);
 List<_i1.Story> get stories =>
-    [_$image$asset_image$Story(), _$foo$foo_widget$Story(), _$bar$bar$Story()];
+    [_$image$asset_image$Story(), _$foo$foo_widget$Story()];
 _i1.Story _$image$asset_image$Story() => _i1.Story('AssetImage', scenarios: [
       _i1.Scenario(
         'AssetImage',
@@ -54,5 +53,3 @@ _i1.Story _$foo$foo_widget$Story() => _i1.Story('FooWidget', scenarios: [
       _i4.foo1(),
       _i4.foo2()
     ]);
-_i1.Story _$bar$bar$Story() => _i1.Story('Sample Widget',
-    scenarios: [_i5.twoLineText(), _i5.emptyText(), ..._i5.variousText()]);

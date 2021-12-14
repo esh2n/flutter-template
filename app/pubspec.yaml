@@ -1,4 +1,4 @@
-name: xflutter_template
+name: app
 description: A new Flutter project.
 publish_to: 'none'
 version: 1.0.0+1
@@ -22,7 +22,7 @@ dependencies:
   version: ^2.0.0 # version情報取得
   modal_bottom_sheet: ^2.0.0
   gap: ^2.0.0
-  # image_picker: ^0.8.4 # 端末に保存されている画像を使う
+  image_picker: ^0.8.4 # 端末に保存されている画像を使う
 
   # Local DB
   hive: ^2.0.4

@@ -1,5 +1,5 @@
 library component;
 
-export 'bar/bar.dart';
+export '01_atom/unfocus_on_tap.dart';
 
 String? packageName = 'component';
