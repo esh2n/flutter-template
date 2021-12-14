@@ -1,4 +1,4 @@
-# xflutter_template
+# xflutter_template/app
 
 > Flutter + Firebaseテンプレートプロジェクト.
 
@@ -48,9 +48,8 @@ flutter run --dart-define=FLAVOR=prod
 
 ## ■ TODO
 
-- 一括環境構築用スクリプト
 - CI/CD追加
-- FirebaseCloudMessagingなどよく使うであろう機能もつけておく(別ブランチで対応もあり)
+- FirebaseCloudMessagingなどよく使うであろう機能もつけておく
 
 ## ■ 参考
 
