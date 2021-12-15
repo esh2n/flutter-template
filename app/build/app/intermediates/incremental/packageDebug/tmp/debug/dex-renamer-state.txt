@@ -1,9 +1,9 @@
-#Mon Dec 13 20:03:27 JST 2021
-base.2=/Users/esh2n/go/github.com/esh2n/xflutter-template/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
+#Wed Dec 15 19:13:58 JST 2021
+base.2=/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
 path.2=classes3.dex
-base.1=/Users/esh2n/go/github.com/esh2n/xflutter-template/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+base.1=/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
 path.1=classes2.dex
-base.0=/Users/esh2n/go/github.com/esh2n/xflutter-template/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.0=/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

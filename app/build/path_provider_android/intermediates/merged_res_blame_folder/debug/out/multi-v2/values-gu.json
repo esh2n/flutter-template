@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
+            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/incremental/mergeDebugResources/merged.dir/values-gu/values-gu.xml",
             "map": [
                 {
                     "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/values-gu/values-gu.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/values-gu/values-gu.xml",
+            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/values-gu/values-gu.xml",
             "map": [
                 {
                     "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/values-gu/values-gu.xml",

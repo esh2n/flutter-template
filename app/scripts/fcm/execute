@@ -1,0 +1,17 @@
+#!/bin/bash
+source ../../.env
+
+case $1 in
+"dev" )
+  AUTH_KEY=$DEV_FCM_KEY;;
+"stg" )
+  AUTH_KEY=$STG_FCM_KEY;;
+"prod" )
+  echo '🙇‍♂️本番環境への通知はこちら ===> https://console.firebase.google.com/'
+  exit 0;;
+esac
+
+curl -X POST --header "Authorization: key=$AUTH_KEY" \
+--Header "Content-Type: application/json" \
+https://fcm.googleapis.com/fcm/send \
+-d @data.json

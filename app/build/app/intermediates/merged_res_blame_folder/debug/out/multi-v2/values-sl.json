@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/66c37f19172b621108992dc0539405bb/jetified-play-services-basement-17.6.0/res/values-sl/values.xml",

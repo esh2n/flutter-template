@@ -1,22 +1,22 @@
 [
     {
-        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
+        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png",
         "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
-        "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
-    },
-    {
-        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
+        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal.9.png",
         "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
+        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_normal.9.png",
         "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
+        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_low_pressed.9.png",
         "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/path_provider_android/intermediates/res/merged/debug/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png",
+        "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/7f06d3e73182ae8feef09309be2b9ed9/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     }
 ]

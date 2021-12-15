@@ -24,11 +24,13 @@ dependencies:
   gap: ^2.0.0
   image_picker: ^0.8.4 # 端末に保存されている画像を使う
 
-  # Local DB
-  hive: ^2.0.4
-  hive_flutter: ^1.1.0
+  hive: ^2.0.4 # Local DB
+  hive_flutter: ^1.1.0 # Local DB
+
+  url_launcher: ^6.0.9
 
   # Firebase関連
+  fcm_config: ^3.2.1 # 非公式
   cloud_firestore: ^3.0.0
   firebase_analytics: ^8.3.4
   firebase_auth: ^3.1.5

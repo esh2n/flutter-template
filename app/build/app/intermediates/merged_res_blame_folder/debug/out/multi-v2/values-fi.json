@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
+            "outputFile": "/Users/esh2n/go/github.com/esh2n/xflutter-template/app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "/Users/esh2n/.gradle/caches/transforms-2/files-2.1/15ea7eb7d4904f49907f809d5e4d3c65/jetified-firebase-messaging-23.0.0/res/values-fi/values.xml",
