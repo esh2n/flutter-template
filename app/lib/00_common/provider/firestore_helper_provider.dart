@@ -146,7 +146,7 @@ class FirestoreHelper {
   }) async {
     final batch = db.batch();
     for (var data in dataList) {
-      final documentId = data[documentIdName];
+      final documentId = data[documentIdName] as String;
       batch.set(
         db.collection(path).doc(documentId),
         data,
