@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
-import '00_common/provider/firebase_analytics_provider.dart';
-import '00_common/provider/firebase_messaging_provider.dart';
+import '00_common/provider/firebase_logs_helper_provider.dart';
+import '00_common/provider/firebase_messaging_helper_provider.dart';
 import '00_common/provider/flavor_provider.dart';
 import '00_common/provider/package_info_provider.dart';
 import '01_presentation/app.dart';
@@ -23,7 +23,7 @@ Future<void> main() async {
     Future(() async => await Hive.initFlutter()),
     Future(() async => pi = await PackageInfo.fromPlatform()),
     Future(() async => fcmHelper = FirebaseMessagingHelper(FCMConfig.instance)),
-    Future(() async => FirebaseAnalyticsHelper()),
+    Future(() async => FirebaseLogsHelper()),
   ]);
   runApp(
     ProviderScope(

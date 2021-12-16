@@ -1,0 +1,11 @@
+#!/bin/sh
+# firebase emulatorを起動する上で必要な手順を行います.
+CURRENT_DIR=$(pwd)
+cd data
+unzip -P 123456 firestore_export_example.zip
+export GOOGLE_APPLICATION_CREDENTIALS=$CURRENT_DIR"/keys/dev-key.json"
+echo "your CREDENTIALS is at "$CURRENT_DIR"/keys/dev-key.json."
+cd ../
+npm i
+cd functions && npm i && tsc && open http://localhost:4000/
+cd ../ && npm run emulator
