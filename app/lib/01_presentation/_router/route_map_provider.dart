@@ -1,11 +1,16 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:routemaster/routemaster.dart';
-import '../setting_page/setting_page.dart';
+
+// Project imports:
 import '../app_info_page/app_info_page.dart';
 import '../home_page/home_page.dart';
-import '../tab_scaffold_page/tab_scaffold_page.dart';
 import '../not_found_page/not_found_page.dart';
+import '../setting_page/setting_page.dart';
+import '../tab_scaffold_page/tab_scaffold_page.dart';
 
 final routeMapProvider = Provider((ref) {
   return RouteMap(

@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ../../ && \
+flutter pub get && \
+flutter pub run import_sorter:main && \
+echo 'done';

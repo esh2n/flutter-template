@@ -1,8 +1,12 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:routemaster/routemaster.dart';
-import 'package:component/component.dart';
 
+// Package imports:
+import 'package:component/component.dart';
+import 'package:routemaster/routemaster.dart';
+
+// Project imports:
 import 'top_level_tab.dart';
 
 class TabScaffoldPage extends StatelessWidget {

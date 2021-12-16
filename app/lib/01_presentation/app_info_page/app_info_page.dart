@@ -1,9 +1,14 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:routemaster/routemaster.dart';
-import '../../00_common/provider/package_info_provider.dart';
+
+// Project imports:
 import '../../00_common/provider/flavor_provider.dart';
+import '../../00_common/provider/package_info_provider.dart';
 
 class AppInfoPage extends ConsumerWidget {
   const AppInfoPage({

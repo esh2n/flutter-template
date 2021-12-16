@@ -1,6 +1,9 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+// Package imports:
 import 'package:fcm_config/fcm_config.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final firebaseMessagingHelperProvider = Provider<FirebaseMessagingHelper>(
     (ref) => FirebaseMessagingHelper(FCMConfig.instance));

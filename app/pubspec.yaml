@@ -1,37 +1,18 @@
 name: app
 description: A new Flutter project.
-publish_to: 'none'
+publish_to: "none"
 version: 1.0.0+1
 environment:
   sdk: ">=2.12.0 <3.0.0"
 dependencies:
-  flutter:
-    sdk: flutter
-  component:
-    path: '../component'
-  cupertino_icons: ^1.0.2 # iOS系のアイコンパック
-  package_info_plus: ^1.3.0 # BundleIDなどをアプリ側で検知
   cached_network_image: ^3.1.0 # Imageをキャッシュ化
-  flutter_riverpod: ^1.0.0 # 状態管理
-  tuple: ^2.0.0 # dartにTupleを追加(https://pub.dev/packages/tuple)
-  intl: ^0.17.0 # l10n対応
-  flutter_localizations:
-    sdk: flutter
-  routemaster: ^0.9.5 # Router2.0ラッパー
-  uuid: ^3.0.4
-  version: ^2.0.0 # version情報取得
-  modal_bottom_sheet: ^2.0.0
-  gap: ^2.0.0
-  image_picker: ^0.8.4 # 端末に保存されている画像を使う
-
-  hive: ^2.0.4 # Local DB
-  hive_flutter: ^1.1.0 # Local DB
-
-  url_launcher: ^6.0.9
+  cloud_firestore: ^3.0.0
+  component:
+    path: "../component"
+  cupertino_icons: ^1.0.2 # iOS系のアイコンパック
 
   # Firebase関連
   fcm_config: ^3.2.1 # 非公式
-  cloud_firestore: ^3.0.0
   firebase_analytics: ^8.3.4
   firebase_auth: ^3.1.5
   firebase_core: ^1.9.0
@@ -41,14 +22,34 @@ dependencies:
   firebase_performance: ^0.7.1+3
   firebase_remote_config: ^0.11.0+2
   firebase_storage: ^10.0.7
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^1.0.0 # 状態管理
+  gap: ^2.0.0
+
+  hive: ^2.0.4 # Local DB
+  hive_flutter: ^1.1.0 # Local DB
+  image_picker: ^0.8.4 # 端末に保存されている画像を使う
+  intl: ^0.17.0 # l10n対応
+  modal_bottom_sheet: ^2.0.0
+  package_info_plus: ^1.3.0 # BundleIDなどをアプリ側で検知
+  routemaster: ^0.9.5 # Router2.0ラッパー
+  tuple: ^2.0.0 # dartにTupleを追加(https://pub.dev/packages/tuple)
+
+  url_launcher: ^6.0.9
+  uuid: ^3.0.4
+  version: ^2.0.0 # version情報取得
 
 dev_dependencies:
+  build_runner: ^2.1.5
+  flutter_launcher_icons: ^0.9.2
+  flutter_lints: ^1.0.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
-  flutter_launcher_icons: ^0.9.2
   hive_generator: ^1.1.1
-  build_runner: ^2.1.5
+  import_sorter: ^4.6.0
 flutter:
   uses-material-design: true
   generate: true
